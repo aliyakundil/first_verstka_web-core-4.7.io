@@ -1,0 +1,176 @@
+body {
+    background-color: #EFF6FF;
+}
+
+main {
+    background-color: #FFFFFF;
+    width: 1437px;
+    height: 1000px;
+    /*display: flex;
+     flex-direction: column; */
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: #FFFFFF;
+    box-shadow: 2px 2px 2px #EEEEEE; /*тень*/
+}
+
+#block1 {
+    float: left; /*обтекать слева*/
+    display: block; /*блок*/
+}
+
+#block2 {
+    float: left;
+    display: block;
+    margin-top: 80px;
+    margin-left: 70px;
+    font-family: Barlow;
+    color: #2A4A5C;
+}
+
+p {
+    color: #7B8A92;
+}
+
+.logo {
+    position: absolute; /*элемент позиционируется относительно ближайшего родительского элемента, который имеет позиционирование*/
+    top: 85px;
+    left: 100px;
+    width: 100px;
+    height: 100px; 
+}
+
+.button {
+    margin-top: 60px;
+}
+
+.button-fb {
+    color:white;
+    background-color: #255A9B;
+    width: 265px;
+    height: 50px; 
+    position: relative; /*Относительное позиционирование сдвигает элемент относительно его обычного положения.*/
+}
+
+.button-in {
+    color:white;
+    background-color: #0076B6;
+    width: 265px;
+    height: 50px; 
+    position: relative;
+    left: 30px;
+}
+
+.fb {
+    position: absolute;
+    margin-top: -8px;
+    margin-left: -50px; 
+    width: 25px;
+    height: 29px; 
+}
+
+.in {
+    position: absolute;
+    margin-top: -8px;
+    margin-left: -50px; 
+    width: 25px;
+    height: 29px; 
+}
+
+.separator {
+    top: 29px;
+    text-align: center;
+    margin: 20px 90px;
+    position: relative;
+}
+.separator::before, .separator::after { /*до и после контента*/
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background-color: #AFAFAF;
+}
+
+.separator::before {
+    left: 0;
+}
+.separator::after {
+    right: 0;
+}
+
+form {
+    margin-top: 80px;
+}
+
+.input-email {
+    width: 255px;
+    height: 50px; 
+    left: 30px;
+    /* border-color: #EEEEEE; */
+}
+
+.input-phone {
+    margin-left: 30px;
+    width: 255px;
+    height: 50px; 
+    /* border-color: #EEEEEE; */
+}
+
+.investor{
+    margin-top: 60px;
+}
+
+form.radio{
+    margin-top: 50px;
+}
+
+form.radio label{
+    /* top: 20px; */
+    margin-right: 40px;
+    font-weight: bold; /*Жирный шрифт*/
+}
+
+.radio { 
+    position: relative; 
+}
+
+.radio-help { 
+  visibility: hidden; /*прячет элемент*/
+  position: absolute; 
+  top: 200%; 
+  left: auto; 
+  margin-right: 270px;
+  /* transform: translateX(-50%);  */
+  background: white; 
+  color: #AFAFAF; 
+  border-radius: 10px; 
+  border-color: #AFAFAF;
+  padding: 10px; 
+  z-index: 1; 
+  /* margin-right: 270px; */
+}
+
+.radio:hover .radio-help {  /*:hover срабатывает, когда пользователь наводит на элемент мышью*/
+    visibility: visible; 
+}
+
+.link {
+    margin-top: 130px;
+}
+
+a {
+    color: #3698FB;
+}
+
+.button-cr {
+    color:white;
+    background-color: #3698FB;
+    width: 265px;
+    height: 50px; 
+    position: relative;
+    top: 40px;
+    border-radius: 10px; /*закругленные углы*/
+}
